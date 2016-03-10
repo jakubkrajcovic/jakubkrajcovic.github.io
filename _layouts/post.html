@@ -1,0 +1,72 @@
+---
+layout: default
+title: My Blog
+type: no-sidebar
+---
+<!-- Main -->
+<div class="wrapper style2">
+	<div class="title">{{ page.title }}</div>
+	<div id="main" class="container">
+
+		<!-- Content -->
+			<div id="content">
+				<article class="box post">
+					<header class="style1">
+						<h2>{{ page.subtitle }}</h2>
+						<p>{{ page.description }}</p>
+					</header>
+
+					{% if page.image %}
+					<a href="#" class="image featured">
+						<div class="blog-page-image" style="background: url('{{ page.image }}')center/cover;"></div>
+					</a>
+					{% endif %}
+
+					<p>{{ content }}</p>
+					
+				</article>
+
+				{% if site.data.theme.show_post_navs %}
+				{% if page.previous or page.next %}
+				<div class="row 150%">
+
+					{% if page.previous %}
+					<div class="6u 12u(mobile)">
+						<section class="box">
+							<header>
+								<h2>{{ page.previous.title }}</h2>
+							</header>
+							{% if page.previous.image %}
+								<a href="#" class="image featured"><img src="{{ page.previous.image }}" alt="{{ page.previous.alt }}" class="the-post-image"></a>
+							{% endif %}
+							<p>{{ page.previous.summary }}</p>
+          					{{ page.previous.excerpt | markdownify | truncatewords: 100 }}
+							<a class="button style1 button-width" href="{{ page.previous.url | prepend:site.baseurl }}/">Continue Reading</a>
+						</section>
+					</div>
+					{% endif %}
+
+					{% if page.next %}
+					<div class="6u 12u(mobile)">
+						<section class="box">
+							<header>
+								<h2>{{ page.next.title }}</h2>
+							</header>
+							{% if page.next.image %}
+								<a href="#" class="image featured"><img src="{{ page.next.image }}" alt="{{ page.next.alt }}" class="the-post-image"></a>
+							{% endif %}
+							<p>{{ page.next.summary }}</p>
+          					{{ page.next.excerpt | markdownify | truncatewords: 100 }}
+							<a class="button style1 button-width" href="{{ page.next.url | prepend:site.baseurl }}/">Continue Reading</a>
+						</section>
+					</div>
+					{% endif %}
+
+				</div>
+				{% endif %}
+				{% endif %}
+			</div>
+
+	</div>
+</div>
+

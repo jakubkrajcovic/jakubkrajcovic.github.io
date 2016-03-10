@@ -1,0 +1,41 @@
+---
+layout: default
+title: My blog
+type: left-sidebar
+---
+<div class="wrapper style2">
+	<div class="title">Archives</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+				
+				{% for post in site.posts %}
+					<!-- Content -->
+						<div id="content" class="blog-content">
+							<article class="box post left-blog-post">
+								<div class="clearfix left-blog-box">
+									<header class="col-sm-7">
+										<h2 class="text-left">{{ post.title }}</h2>
+										<div class="post-time-box">
+											
+										</div>
+										<p>{{ post.subtitle }}</p>
+									</header>
+									<div class="col-sm-5 text-center">
+										Posted on <time>{{ post.date | date_to_long_string }}</time>
+									</div>
+								</div>
+								{% if post.image %}
+								<a href="{{ post.url | prepend:site.baseurl }}/" class="image featured">
+									<img src="{{ post.image }}" alt="{{ post.alt }}" />
+								</a>
+								{% endif %}
+								<p>{{ post.excerpt }}</p>
+								<a href="{{ post.url | prepend:site.baseurl }}/" class="button style2">Continue Reading</a>
+							</article>
+						</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

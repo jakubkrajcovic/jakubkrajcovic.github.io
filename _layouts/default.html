@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+{% include head.html %}
+
+
+{% if page.type %}
+	<body class="{{ page.type }}">
+{% else %}
+	<body class="{{ site.type }}">
+{% endif %}
+	<div id="page-wrapper">
+
+		{% include header.html %}
+
+		{{ content }}
+
+		{% include footer.html %}
+		
+	</div>
+
+	{% include foot.html %}
+
+</body>
+</html>
