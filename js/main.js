@@ -91,6 +91,11 @@
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
 
+
+		$('.sa-skill-detail-1').find('.progress').each( function() {
+            var el = $(this).attr('data-progress');
+            $(this).html("<div class='progress-bar' style='width: " + el + "'><span class='sr-only'>" + el + " Complete</span><span class='process-end' style='left: " + el + "'></span></div>");
+        });
 	});
 
 })(jQuery);
