@@ -1,0 +1,9 @@
+- header: Aliquam diam consequat
+  subheader: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada, felis vulputate laoreet consectetur, urna odio consequat diam, non varius nunc diam vel lectus. Aliquam suscipit dui metus, eu gravida velit semper eu. Nunc fermentum nisi quis sapien placerat venenatis. Quisque porttitor egestas lacus, eu bibendum libero semper sed. Phasellus sit amet vestibulum risus. Donec justo eros, finibus sed rhoncus eu, lacinia ut turpis. Pellentesque lacinia faucibus quam, id imperdiet est facilisis ut. Sed viverra libero nec eros condimentum convallis.
+  image: person.png
+  birthdate: 12-03-2016
+  phone: +123456789
+  mail: example@example.com
+  address: Country State street 0000
+  link: link/to/your/downloadCV/file

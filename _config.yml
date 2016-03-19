@@ -5,3 +5,14 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+collections:
+  project:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: project
+    values:
+      layout: project

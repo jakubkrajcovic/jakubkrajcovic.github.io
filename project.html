@@ -2,90 +2,23 @@
 layout: default
 title: My Services
 ---
-<div class="wrapper style3" id="project-page">
+<!-- Highlights -->
+<div class="wrapper style3">
 	<div class="title">My Projects</div>
 	<div id="highlights" class="container">
-		<div class="row">
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
+		<div class="row 150%">
+			{% for project in site.project %}
+			<div class="4u 12u(mobile)">
+				<section class="highlight">
+					<a href="{{ project.url }}" class="image featured"><img src="/images/{{ project.image | prepend: site.baseurl }}" alt="{{ project.image-description }}"></a>
+					<h3><a href="{{ project.url }}">{{ project.header }}</a></h3>
+					<p>{{ project.content | truncatewords:35 }}</p>
+					<ul class="actions">
+						<li><a href="{{ project.url }}" class="button style1">Learn More</a></li>
+					</ul>
 				</section>
 			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
-			<div class="col-sm-4 col-md-3 col-xs-12">
-				<section class="highlight project-item">
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<div class="overlay">
-						<a href="images/portfolio-img-01.jpg" class="more"></a>
-						<h3>Product Name Here</h3>
-						<h4>Creative / Unique</h4>
-					</div>
-				</section>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>

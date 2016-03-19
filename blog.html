@@ -11,15 +11,15 @@ type: left-sidebar
 				<div class="4u 12u(mobile)">
 					<!-- Sidebar -->
 						<div id="sidebar">
-						{% for post in site.posts limit:8 %}
+						{% for post in site.posts limit:8 offset: 3 %}
 							<section class="box">
 								<header>
-									<h2>{{ post.title }}</h2>
+									<h2><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h2>
 								</header>
 								<ul class="style2">
 									<li>
 										<article class="box post-excerpt">
-											<a href=" href="{{ post.url | prepend:site.baseurl }}/"" class="image left"><img src="{{ post.image }}" alt="{{ post.alt }}"/></a>
+											<a href="{{ post.url | prepend:site.baseurl }}/"class="image left"><img src="{{ post.image }}" alt="{{ post.alt }}"/></a>
 											<h3><a href="{{ post.url | prepend:site.baseurl }}/">{{ post.subtitle }}</a></h3>
 											<p class="no-margin">{{ post.excerpt | truncatewords: 30 }}</p>
 										</article>
@@ -33,7 +33,7 @@ type: left-sidebar
 				</div>
 
 				<div class="8u 12u(mobile) important(mobile)">
-					{% for post in site.posts limit:4 %}
+					{% for post in site.posts limit:3 %}
 					<!-- Content -->
 						<div id="content" class="blog-content">
 							<article class="box post left-blog-post">
