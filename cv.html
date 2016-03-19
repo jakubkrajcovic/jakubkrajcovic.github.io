@@ -92,8 +92,13 @@ title: My Services
 				</div>
 			</div>
 			{% endfor %}
-
 		</div>
+
+		{% for about in site.data.about %}
+			<div class="text-center download-cv">
+				<a href="https://{{ about.link }}" class="button style1" target="_blank">Download CV</a>
+			</div>
+		{% endfor %}
 
 	</div>
 </div>
