@@ -3,10 +3,19 @@ education:
     university: New York State Univerity
     degree: Bachalor
     description: Nam tempor finibus sodales. Nulla nulla turpis,
-  - date: 2000 Sep  2010 June
-    university: New York  Univerity
-    degree: Master
-    description: Nam tempor finibus sodales. Nulla nulla turpis, fringilla sagittis lorem vel, efficitur tristique tortor. Duis posuere et ligula sed lobortis. Sed id porta metus. Phasellus nec convallis odio, vel laoreet enim. In quis risus sem.
+  - date: 2003 Sep  2000 June
+    university: New York State Univerity
+    degree: Bachalor
+    description: Nam tempor finibus sodales. Nulla nulla turpis,
+  - date: 2003 Sep  2000 June
+    university: New York State Univerity
+    degree: Bachalor
+    description: Nam tempor finibus sodales. Nulla nulla turpis,
+  - date: 2003 Sep  2000 June
+    university: New York State Univerity
+    degree: Bachalor
+    description: Nam tempor finibus sodales. Nulla nulla turpis,
+
 
 experience:
   - date: 2003 Sep  2000 June

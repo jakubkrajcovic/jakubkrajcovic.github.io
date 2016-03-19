@@ -7,55 +7,71 @@ title: My Services
 <div class="wrapper style3 resume">
 	<div class="title">Resume</div>
 	<div class="container">
+
+
 		<div class="row">
 			<div class="col-md-12">
 				<div class="resume-title">
-					<div class="sub-head text-center">MY EDUCATION</div>
+					<h3>Education</h3>
 				</div>
-				
-			</div>
-			<div class="row">
-				{% for resume in site.data.resume.education %}
-				<div class="col-md-6 col-sm-6 xol-xs-12">
-					<div class="experience-wrap education">
-						<div class="date-wrap">{{ resume.date }}</div>
-						<div class="text-wrap">
-							<div class="organization-name">
-								<h4>{{ resume.university }}</h4>
-								<h5>{{ resume.degree }}</h5>
-							</div>
-							<div class="text-inner">{{ resume.description }}</div>
-						</div>
-					</div>					
+				<div class="resume">
+					<ul class="timeline">
+						{% for resume in site.data.resume.education %}
+							<li>
+								<div class="posted-date">
+									<span class="month">{{ resume.date }}</span>
+								</div><!-- /posted-date -->
+
+								<div class="timeline-panel wow">
+									<div class="timeline-content">
+										<div class="timeline-heading">
+											<h3>{{ resume.university }}</h3>
+											<span>{{ resume.degree }}</span>
+										</div><!-- /timeline-heading -->
+
+										<div class="timeline-body">
+											<p>{{ resume.description }}</p>
+										</div><!-- /timeline-body -->
+									</div> <!-- /timeline-content -->
+								</div><!-- /timeline-panel -->
+							</li>
+						{% endfor%}
+					</ul>
 				</div>
-				{% endfor %}
-			</div>
+			</div>		
 		</div><!-- /row -->
 
 		<div class="row">
 			<div class="col-md-12">
 				<div class="resume-title">
-					<div class="sub-head text-center">My Expeience</div>
+					<h3>Experience</h3>
 				</div>
-				<div class="row">
-				{% for resume in site.data.resume.experience %}
-				<div class="col-md-6 col-sm-6 xol-xs-12">
-					<div class="experience-wrap experience">
-						<div class="date-wrap">{{ resume.date }}</div>
-						<div class="text-wrap">
-							<div class="organization-name">
-								<h4>{{ resume.title }}</h4>
-								<h5>{{ resume.place }}</h5>
-							</div>
-							<div class="text-inner">{{ resume.description }}</div>
-						</div>
-					</div>					
-				</div>
-				{% endfor %}
+				<div class="resume">
+					<ul class="timeline">
+						{% for resume in site.data.resume.experience %}
+							<li>
+								<div class="posted-date">
+									<span class="month">{{ resume.date }}</span>
+								</div><!-- /posted-date -->
+
+								<div class="timeline-panel wow">
+									<div class="timeline-content">
+										<div class="timeline-heading">
+											<h3>{{ resume.title }}</h3>
+											<span>{{ resume.place }}</span>
+										</div><!-- /timeline-heading -->
+
+										<div class="timeline-body">
+											<p>{{ resume.description }}</p>
+										</div><!-- /timeline-body -->
+									</div> <!-- /timeline-content -->
+								</div><!-- /timeline-panel -->
+							</li>
+						{% endfor%}
+					</ul>
 				</div>
 			</div>
 		</div><!-- /row -->
-
 	
 		<div class="main-head">
 			<h1>my skills</h1>
