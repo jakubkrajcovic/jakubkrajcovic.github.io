@@ -1,19 +1,19 @@
-- header: Service 1
+- header: Cloud Strategy
   icon: comment
   service-line: true
-  description: Description 1
-- header: Service 2
+  description: "<p>Being effective and innovative in using cloud technologies has become a prerequisite for the success of almost any modern enterprise. I can provide expert advice and devise a strategy for your business that promotes innovation and accelerates cloud adoption. Market disruption due to the introduction of cloud computing is more than real. Companies can either evolve or go the way of the dinosaur and I can help you be on the right side of evolution.</p>"
+- header: DevOps Implementation and Strategies
   icon: refresh
-  description: Description 2
-- header: Service 3
+  description: "<p>Where to start with DevOps is often the first question on people's minds once organizations realize that doing things the traditional way no longer cuts the mustard. I can help with understanding the DevOps lay of the land, how to successfully implement DevOps in your organization and more importantly help your business realize actual, real bottom-line benefit from doing so.</p>"
+- header: Cultural Transformation
   icon: image
-  description: Description 3
-- header: Service 4
+  description: "<p>Cultural transformation is possibly the most important prerequisite for a successful Cloud and DevOps adoption within any organization. Without the cultural foundation any attempt at change stays just that - an attemp. I strongly believe that only through a successful culture of trust, transparency and performance can organizations achieve their best and I am passionate about developing environments conductive to excellence. If you've ever wondered <i>why are we doing things this way?</i> a change in culture can definitely help.</p>"
+- header: Technology Value Mapping
   icon: cog
-  description: Description 4
-- header: Service 5
+  description: "<p>Whether it's the internal systems companies use to manage their business or technology used to interface with your customers, businesses need to know how the technology they are using or thinking of using maps to the value they strive to generate. If the link to value is missing, then any technology is just self-serving and missing the mark. I can help your business understand the link between neew technologies and the current value being generated, as well as the potential for generating future value.</p>"
+- header: Organizational Agility, Structure and Development
   icon: wrench
-  description: Description 5
-- header: Service 6
+  description: "<p>With a strategy for succeding in the cloud-enabled world in place the next challenge often becomes a question of structuring your organization and your teams for success and attracting, motivating and retaining the best talent possible. How do we set people on the path to success and make sure this path is aligned with the success of the organization? And more importantly, since we can rarely predict with certaintny what's coming our way, how do we then ensure we are agile enough to be able to respond to future, unkown challenges?</p>"
+- header: Business Model Development
   icon: check
-  description: Description 6
+  description: "<p></p>"
