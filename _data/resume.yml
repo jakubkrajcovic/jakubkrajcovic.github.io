@@ -1,43 +1,53 @@
 education:
-  - date: 2003 Sep  2000 June
-    university: New York State Univerity
-    degree: Bachalor
-    description: Nam tempor finibus sodales. Nulla nulla turpis,
-  - date: 2003 Sep  2000 June
-    university: New York State Univerity
-    degree: Bachalor
-    description: Nam tempor finibus sodales. Nulla nulla turpis,
-  - date: 2003 Sep  2000 June
-    university: New York State Univerity
-    degree: Bachalor
-    description: Nam tempor finibus sodales. Nulla nulla turpis,
-  - date: 2003 Sep  2000 June
-    university: New York State Univerity
-    degree: Bachalor
-    description: Nam tempor finibus sodales. Nulla nulla turpis,
-
+  - date: 2008 Feb - 2008 Nov
+    university: "<a href=http://sydney.edu.au target=_blank>University of Sydney</a>"
+    degree: "<a href=http://sydney.edu.au/courses/master-of-information-technology target=_blank>Master of Information Technology</a>"
+    description: The MInfTech degree from Sydney Uni is an overall generalist degree that builds on top of foundational computer science skills. 
+  - date: 2003 Sep - 2007 June
+    university: "<a href=http://www.fiit.stuba.sk/en target=_blank>Slovak Technical University</a>"
+    degree: Bachelor of Engineering - Computer Science
+    description: Foundational computer science skills ranging from advanced maths, logic, software engineering and architecture through artificial intelligence and more.
 
 experience:
-  - date: 2003 Sep  2000 June
-    title: Web Designer/Developer
-    place: Marketing Firm, Inc.
-    description: Nam tempor finibus sodales. Nulla nulla turpis,
-  - date: 2003 Sep  2000 June
-    title: Web Designer/Developer
-    place: Marketing Firm, Inc.
-    description: Nam tempor finibus sodales. Nulla nulla turpis,
+  - date: 2014 Nov - Current
+    title: "<a href=http://www.gridmarkets.com target=_blank>CTO, Gridmarkets</a>"
+    place: Gridmarkets, Sydney, Australia
+    description: Gridmarkets is building a platform to enable users to leverage unused compute capacity readily available all over the world
+  - date: 2015 Sep - Current
+    title: "<a href=http://pwc.com.au target=_blank>Cloud Services Leader, PwC</a>"
+    place: PwC Australia, Sydney, Australia
+    description: Building out a cloud brokerage capability within the PwC Australian business and creating a template for building such a capability on a global scale
+  - date: 2013 May - 2015 Sep
+    title: "<a href=http://rackspace.com.au target=_blank>Senior Cloud Architect, Rackspace</a>"
+    place: Rackspace Australia, Sydney, Australia
+    description: Principal cloud architect for the Australian and New Zealand business for Rackspace. Providing advice for all major clients nation wide and was engaged in building out a DevOps as a Service product offering
+  - date: 2012 Jun - 2012 Dec
+    title: "<a href=http://wetafx.co.nz target=_blank>Systems Architect, Weta Digital</a>"
+    place: Weta Digital, Wellington, New Zealand
+    description: Responsible for multiple technology systems instrumental in making the first of The Hobbit film trilogy
+  - date: 2011 Feb - 2012 May
+    title: "<a href=http://posam.sk target=_blank>Enterprise Architect, PosAm</a>"
+    place: Deutsche Telekom / PosAm, Bratislava, Slovakia
+    description: Laid the architectural groundwork for the first government cloud implementationin Slovakia and established a TOGAF methodology practice within the company
+  - date: 2008 Aug - 2010 Sep
+    title: "<a href=http://animallogic.com target=_blank>Systems Engineer, Animal Logic</a>"
+    place: Animal Logic, Sydney, Australia
+    description: Responsible for video workflows and multiple storage environments in supporting an animated feature film. Engineering liaison to director Zack Snyder and editor David Burrows
+  - date: 2005 Sep - 2006 Aug
+    title: "<a href=http://zoznam.sk target=_blank>Systems Administrator / DevOps Engineer, Zoznam.sk</a>"
+    place: Zoznam.sk, Bratislava, Slovakia
+    description: Doing DevOps before it was called DevOps. Supporting the operations and developers of the largest online portal in Slovakia at the time
+
 
 skill:
   - icon: cog
-    header: Web Developer
+    header: Cloud Computing
   - icon: cog
-    header: Web Developer
-  - icon: code
-    header: Web Developer
+    header: Transformation and change execution
   - icon: cog
-    header: Web Developer
-  - icon: code
-    header: Web Developer
+    header: Org development
   - icon: cog
-    header: Web Developer
+    header: Technical presales, sales
+  - icon: cog
+    header: Craft beer entrepreneurship
 
